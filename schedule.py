@@ -27,7 +27,7 @@ outputFileName = "schedule-files/TerribleSchedule.csv"
 
 # Thirty minute time slots are the only option, with 10 minute auditions
 # only am/pm time supported
-# 
+# Can't handle conflicts & people who don't have auditions
 
 
 # BEGIN ACTUAL CODE
@@ -86,7 +86,7 @@ for x in xrange(len(days)):
 		startTime = parser.parse(timeString)
 		for y in xrange(numberOfActualSlotsInASlot):
 			advanceTime = startTime + timedelta(minutes=y*timeSlotLengthInMinutes)
-			humanReadableTime = format(advanceTime, '%H:%M%p')
+			humanReadableTime = format(advanceTime, '%I:%M%p')
 			actualtimes[x].append(humanReadableTime)
 
 print totalTimeSlots
@@ -98,8 +98,7 @@ with open(namesAndEmailFileName) as m:
 
 # make it just the name (before the tab)
 for x in xrange(len(nameArray)):
-	separatorLocation = nameArray[x].find("\t")
-	nameArray[x] = (nameArray[x])[:separatorLocation]
+	nameArray[x] = (nameArray[x])[:-1]
 
 output = {"Time":"Person"}
 
@@ -107,27 +106,63 @@ for x in xrange(len(days)):
 	for time in actualtimes[x]:
 		output[days[x]+" at "+time] = "None";
 
-i = 0
+# scheduling algorithm
+# basically it gives every person their first available choice in order
+i = 0 # person whose audition we're scheduling
 for line in availabilityFormResponses:
-	j = 0
-	for day in xrange(len(days)):
-		print "DAY: "+days[day]
 		print nameArray[i]
-		for availability in totalTimeSlots[day]:
-			if nameArray[i] in scheduledPeople:
-				print "...is already scheduled"
-				break
-			if availability in totalTimeSlots[day] and fill[day][j] < numberOfActualSlotsInASlot and line.find(availability) != -1:
-				atime = j*numberOfActualSlotsInASlot + fill[day][j]
-				print "...is scheduled!"
-				output[actualtimes[atime]] = nameArray[i]
-				fill[day][j] += 1
-				break
-			j += 1
+		for day in xrange(len(days)):
+			j = 0 # timeslot on the day we're checking
+			for availability in totalTimeSlots[day]:
+				if nameArray[i] in scheduledPeople:
+					print "...is already scheduled"
+					break
+				elif availability in totalTimeSlots[day] and fill[day][j] < numberOfActualSlotsInASlot and line.find(availability) != -1:
+					atime = j*numberOfActualSlotsInASlot + fill[day][j]
+					print "...is scheduled!"
+					output[days[day]+" at "+actualtimes[day][atime]] = nameArray[i]
+					fill[day][j] += 1
+					scheduledPeople.append(nameArray[i])
+					break
+				j += 1
 		i += 1
 
 print scheduledPeople
 
+# Handle people who don't yet have auditions
+print "Number of people without auditions: "+str(len(nameArray) - len(scheduledPeople) - 1)
+noAuditioners = []
+i = 0 # remove header row
+for person in nameArray:
+	if i == 0:
+		i = 1
+		continue
+	if person not in scheduledPeople:
+		print person
+		noAuditioners.append(person)
+
+# console schedule
+print "Schedule:"
 for key in sorted(output):
 	out = key +", "+ output[key]
 	print out
+
+# write to csv file
+with open(outputFileName, 'wb') as csvfile:
+	auditionGenerator = csv.writer(csvfile)
+	for key in output:
+		separatorLocation = output[key].find("\t")
+
+		auditionTime = key
+		auditionName = (output[key])[:separatorLocation]
+		auditionEmail = (output[key])[separatorLocation+1:]
+
+		auditionGenerator.writerow([auditionTime, auditionName, auditionEmail])
+
+	for fail in noAuditioners:
+		separatorLocation = fail.find("\t")
+
+		auditionName = fail[:separatorLocation]
+		auditionEmail = fail[separatorLocation+1:]
+		auditionGenerator.writerow(["No Scheduled Time", auditionName, auditionEmail])
+
