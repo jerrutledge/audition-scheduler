@@ -151,6 +151,9 @@ for key in sorted(output):
 with open(outputFileName, 'wb') as csvfile:
 	auditionGenerator = csv.writer(csvfile)
 	for key in output:
+		if output[key] == "None":
+			auditionGenerator.writerow([key, "None", ""])
+			continue
 		separatorLocation = output[key].find("\t")
 
 		auditionTime = key
