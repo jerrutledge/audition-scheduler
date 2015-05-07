@@ -28,6 +28,7 @@ outputFileName = "schedule-files/TerribleSchedule.csv"
 # Thirty minute time slots are the only option, with 10 minute auditions
 # only am/pm time supported
 # Can't handle conflicts & people who don't have auditions
+# No auditionee can be called "None" or "Person"
 
 
 # BEGIN ACTUAL CODE
@@ -151,7 +152,9 @@ for key in sorted(output):
 with open(outputFileName, 'wb') as csvfile:
 	auditionGenerator = csv.writer(csvfile)
 	for key in output:
-		if output[key] == "None":
+		if output[key] == "Person": # ignore the initial object
+			continue
+		if output[key] == "None": # write special rows for unoccupied Audition slots
 			auditionGenerator.writerow([key, "None", ""])
 			continue
 		separatorLocation = output[key].find("\t")
