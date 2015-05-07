@@ -17,18 +17,81 @@ namesAndEmailFileName = "schedule-files/Names.txt"
 # 3. Give it a file name to output 
 # The scheduler generates a .csv file with three columns: 
 # 	1 - a name, 
-# 	2 - a time,
-# 	3 - email text to that person with their email at the top
+# 	2 - an email,
+# 	3 - a day + time,
 # You can save this wherever you want, but don't put them in this same folder (use schedule-files)
 outputFileName = "schedule-files/TerribleSchedule.csv"
 
+
+# Limitations
+
+# Thirty minute time slots are the only option, with 10 minute auditions
+# only am/pm time supported
+# 
+
+
 # BEGIN ACTUAL CODE
 import csv
+import time
+import datetime
+from datetime import timedelta
+from dateutil import parser
 
 print "Opening scheduler"
 
 with open(availabilityFormResponsesFileName) as f:
 	availabilityFormResponses = f.readlines()
+
+# important arrays:
+totalTimeSlots = []
+days = []
+actualtimes = [] # human readable times
+fill = []
+scheduledPeople = []
+
+# important constants
+numberOfActualSlotsInASlot = 3
+timeSlotLengthInMinutes = 10
+
+# figure out what possible timeslots there are
+tabSeparatedValues = csv.reader(availabilityFormResponses, delimiter="\t")
+i = 0
+for row in tabSeparatedValues:
+	if i == 0:
+		i = 1
+		for day in row:
+			days.append(day)
+		print "Days of auditions:"
+		print days
+
+		# initialize totalTimeSlots as a multidimensional array
+		totalTimeSlots = [[] for i in range(len(days))]
+		actualtimes = [[] for i in range(len(days))]
+		fill = [[] for i in range(len(days))]
+	else:
+		for x in xrange(len(days)):
+			timeValues = row[x].split(", ")
+			for timeSlot in timeValues:
+				if timeSlot != "" and timeSlot not in totalTimeSlots[x]:
+					totalTimeSlots[x].append(timeSlot)
+
+# populate the fill variable
+for x in xrange(len(days)):
+	for timeSlot in totalTimeSlots[x]:
+		fill[x].append(0)
+
+		# add human readable times
+		separatorLocation = timeSlot.find(" - ")
+		timeString = timeSlot[:separatorLocation]
+		startTime = parser.parse(timeString)
+		for y in xrange(numberOfActualSlotsInASlot):
+			advanceTime = startTime + timedelta(minutes=y*timeSlotLengthInMinutes)
+			humanReadableTime = format(advanceTime, '%H:%M%p')
+			actualtimes[x].append(humanReadableTime)
+
+print totalTimeSlots
+print actualtimes
+print fill
 
 with open(namesAndEmailFileName) as m:
 	nameArray = m.readlines()
@@ -38,65 +101,33 @@ for x in xrange(len(nameArray)):
 	separatorLocation = nameArray[x].find("\t")
 	nameArray[x] = (nameArray[x])[:separatorLocation]
 
-# figure out what possible timeslots there are
-totalTimeSlots = []
+output = {"Time":"Person"}
+
+for x in xrange(len(days)):
+	for time in actualtimes[x]:
+		output[days[x]+" at "+time] = "None";
+
+i = 0
 for line in availabilityFormResponses:
-	print line
+	j = 0
+	for day in xrange(len(days)):
+		print "DAY: "+days[day]
+		print nameArray[i]
+		for availability in totalTimeSlots[day]:
+			if nameArray[i] in scheduledPeople:
+				print "...is already scheduled"
+				break
+			if availability in totalTimeSlots[day] and fill[day][j] < numberOfActualSlotsInASlot and line.find(availability) != -1:
+				atime = j*numberOfActualSlotsInASlot + fill[day][j]
+				print "...is scheduled!"
+				output[actualtimes[atime]] = nameArray[i]
+				fill[day][j] += 1
+				break
+			j += 1
+		i += 1
 
-# fuck the rest
-# # TODO remove this
-# with :
-#     tsvin = csv.reader(tsvin, delimiter='\t')
-#     csvout = csv.writer(csvout)
+print scheduledPeople
 
-#     for row in tsvin:
-#         count = int(row[4])
-#         if count > 0:
-#             csvout.writerows([row[2:4] for _ in xrange(count)])
-
-# timeslots = ("12:00pm - 12:30pm", 
-# "12:30pm - 1:00pm", 
-# "1:00pm - 1:30pm", 
-# "1:30pm - 2:00pm", 
-# "2:00pm - 2:30pm", 
-# "2:30pm - 3:00pm", 
-# "3:00pm - 3:30pm", 
-# "3:30pm - 4:00pm")
-
-# actualtimes = ("12:00pm","12:10pm","12:20pm","12:30pm","12:40pm","12:50pm","1:00pm","1:10pm","1:20pm","1:30pm","1:40pm","1:50pm","2:00pm","2:10pm","2:20pm","2:30pm","2:40pm","2:50pm","3:00pm","3:10pm","3:20pm","3:30pm","3:40pm","3:50pm")
-
-# output = {"Time":"Person"}
-
-# scheduledPeople = ["Jeremy","Ariana"]
-
-# with open("alreadyscheduled.txt") as y:
-# 	schppl = y.readlines()
-
-# for peep in schppl:
-# 	scheduledPeople.append(peep)
-
-# for time in actualtimes:
-# 	output[time] = "None";
-
-# fill = [0,0,0,0,0,0,0,0,0,0,0,0]
-
-# i = 0
-# for line in availabilityFormResponses:
-# 	j = 0
-# 	print nameArray[i]
-# 	for availability in timeslots:
-# 		if nameArray[i] in scheduledPeople:
-# 			print "...is already scheduled"
-# 			break
-# 		if availability in timeslots and fill[j] < 3 and line.find(availability) != -1:
-# 			atime = j*3 + fill[j]
-# 			print "...is scheduled!"
-# 			output[actualtimes[atime]] = nameArray[i]
-# 			fill[j] += 1
-# 			break
-# 		j += 1
-# 	i += 1
-
-# for key in sorted(output):
-# 	out = key +", "+ output[key]
-# 	print out
+for key in sorted(output):
+	out = key +", "+ output[key]
+	print out
