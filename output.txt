@@ -1,0 +1,1363 @@
+Opening scheduler
+Days of auditions:
+['Saturday, September 19th', 'Sunday, September 20th', 'Monday, September 21st']
+[['2:30pm - 3:00pm',
+  '3:00pm - 3:30pm',
+  '3:30pm - 4:00pm',
+  '4:00pm - 4:30pm',
+  '4:30pm - 5:00pm',
+  '5:00pm - 5:30pm',
+  '5:30pm - 6:00pm',
+  '1:30pm - 2:00pm',
+  '2:00pm - 2:30pm',
+  '11:00am - 11:30am',
+  '11:30am - 12:00pm',
+  '12:00pm - 12:30pm',
+  '12:30pm - 1:00pm',
+  '1:00pm - 1:30pm',
+  '10:00am - 10:30am',
+  '10:30am - 11:00am'],
+ ['2:30pm - 3:00pm',
+  '3:00pm - 3:30pm',
+  '3:30pm - 4:00pm',
+  '4:00pm - 4:30pm',
+  '4:30pm - 5:00pm',
+  '5:00pm - 5:30pm',
+  '5:30pm - 6:00pm',
+  '1:30pm - 2:00pm',
+  '2:00pm - 2:30pm',
+  '11:00am - 11:30am',
+  '11:30am - 12:00pm',
+  '12:00pm - 12:30pm',
+  '12:30pm - 1:00pm',
+  '1:00pm - 1:30pm',
+  '6:00pm - 6:30pm',
+  '6:30pm - 7:00pm',
+  '10:00am - 10:30am',
+  '10:30am - 11:00am'],
+ ['6:30pm - 7:00pm',
+  '7:00pm - 7:30pm',
+  '7:30pm - 8:00pm',
+  '8:00pm - 8:30pm',
+  '8:30pm - 9:00pm',
+  '5:00pm - 5:30pm',
+  '5:30pm - 6:00pm',
+  '6:00pm - 6:30pm',
+  '4:30pm - 5:00pm',
+  '4:00pm - 4:30pm']]
+[['02:30PM',
+  '02:37PM',
+  '02:44PM',
+  '02:51PM',
+  '03:00PM',
+  '03:07PM',
+  '03:14PM',
+  '03:21PM',
+  '03:30PM',
+  '03:37PM',
+  '03:44PM',
+  '03:51PM',
+  '04:00PM',
+  '04:07PM',
+  '04:14PM',
+  '04:21PM',
+  '04:30PM',
+  '04:37PM',
+  '04:44PM',
+  '04:51PM',
+  '05:00PM',
+  '05:07PM',
+  '05:14PM',
+  '05:21PM',
+  '05:30PM',
+  '05:37PM',
+  '05:44PM',
+  '05:51PM',
+  '01:30PM',
+  '01:37PM',
+  '01:44PM',
+  '01:51PM',
+  '02:00PM',
+  '02:07PM',
+  '02:14PM',
+  '02:21PM',
+  '11:00AM',
+  '11:07AM',
+  '11:14AM',
+  '11:21AM',
+  '11:30AM',
+  '11:37AM',
+  '11:44AM',
+  '11:51AM',
+  '12:00PM',
+  '12:07PM',
+  '12:14PM',
+  '12:21PM',
+  '12:30PM',
+  '12:37PM',
+  '12:44PM',
+  '12:51PM',
+  '01:00PM',
+  '01:07PM',
+  '01:14PM',
+  '01:21PM',
+  '10:00AM',
+  '10:07AM',
+  '10:14AM',
+  '10:21AM',
+  '10:30AM',
+  '10:37AM',
+  '10:44AM',
+  '10:51AM'],
+ ['02:30PM',
+  '02:37PM',
+  '02:44PM',
+  '02:51PM',
+  '03:00PM',
+  '03:07PM',
+  '03:14PM',
+  '03:21PM',
+  '03:30PM',
+  '03:37PM',
+  '03:44PM',
+  '03:51PM',
+  '04:00PM',
+  '04:07PM',
+  '04:14PM',
+  '04:21PM',
+  '04:30PM',
+  '04:37PM',
+  '04:44PM',
+  '04:51PM',
+  '05:00PM',
+  '05:07PM',
+  '05:14PM',
+  '05:21PM',
+  '05:30PM',
+  '05:37PM',
+  '05:44PM',
+  '05:51PM',
+  '01:30PM',
+  '01:37PM',
+  '01:44PM',
+  '01:51PM',
+  '02:00PM',
+  '02:07PM',
+  '02:14PM',
+  '02:21PM',
+  '11:00AM',
+  '11:07AM',
+  '11:14AM',
+  '11:21AM',
+  '11:30AM',
+  '11:37AM',
+  '11:44AM',
+  '11:51AM',
+  '12:00PM',
+  '12:07PM',
+  '12:14PM',
+  '12:21PM',
+  '12:30PM',
+  '12:37PM',
+  '12:44PM',
+  '12:51PM',
+  '01:00PM',
+  '01:07PM',
+  '01:14PM',
+  '01:21PM',
+  '06:00PM',
+  '06:07PM',
+  '06:14PM',
+  '06:21PM',
+  '06:30PM',
+  '06:37PM',
+  '06:44PM',
+  '06:51PM',
+  '10:00AM',
+  '10:07AM',
+  '10:14AM',
+  '10:21AM',
+  '10:30AM',
+  '10:37AM',
+  '10:44AM',
+  '10:51AM'],
+ ['06:30PM',
+  '06:37PM',
+  '06:44PM',
+  '06:51PM',
+  '07:00PM',
+  '07:07PM',
+  '07:14PM',
+  '07:21PM',
+  '07:30PM',
+  '07:37PM',
+  '07:44PM',
+  '07:51PM',
+  '08:00PM',
+  '08:07PM',
+  '08:14PM',
+  '08:21PM',
+  '08:30PM',
+  '08:37PM',
+  '08:44PM',
+  '08:51PM',
+  '05:00PM',
+  '05:07PM',
+  '05:14PM',
+  '05:21PM',
+  '05:30PM',
+  '05:37PM',
+  '05:44PM',
+  '05:51PM',
+  '06:00PM',
+  '06:07PM',
+  '06:14PM',
+  '06:21PM',
+  '04:30PM',
+  '04:37PM',
+  '04:44PM',
+  '04:51PM',
+  '04:00PM',
+  '04:07PM',
+  '04:14PM',
+  '04:21PM']]
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+First Name:	Email:
+	day: Saturday, September 19th
+	avail: Saturday, September 19th
+	day: Sunday, September 20th
+	avail: Sunday, September 20th
+	day: Monday, September 21st
+	avail: Monday, September 21st
+
+Valerie	valeriecht@gmail.com
+	day: Saturday, September 19th
+	avail: 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Jeremy	jmolko@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm
+
+	...is already scheduled
+A-Dawg	ainslie_cool@hotmail.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Sanjay	shparker@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Bowen	heyitsjay33@gmail.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Sean	watmansean@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Charina	charina.alducente@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is scheduled!
+Lilian	l4do@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm
+
+	...is scheduled!
+Jane	gjanewang@gmail.com
+	day: Saturday, September 19th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Conrad 	conblack15@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm
+
+	...is scheduled!
+James Lintag	shparker@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Joanna	jtyuan@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is scheduled!
+Simran	purbasim@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is scheduled!
+Nicholas	z27cui@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Jeremy	jerrutledge@gmail.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Yili 	piter0900@gmail.com
+	day: Saturday, September 19th
+	avail: 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Marina	marina.dosen@hotmail.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Kate	katedebellis@hotmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is scheduled!
+Vincent	vjyoung@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is scheduled!
+Riley	rileysqzhang@outlook.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 5:30pm - 6:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Abbey	abbey1775@gmail.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Nicholas 	ioannidis_nick@hotmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Rishi	rishnarale@gmail.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+David	dav.idcox@yahoo.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Chris	c9pan@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Alex	dun.den@hotmail.com
+	day: Saturday, September 19th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Benjamin	benjaminkeah@yahoo.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Trong	trongshen@hotmail.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Doug	doug.chau@outlook.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Zi Tong (Ally)	allyxu55555@hotmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+
+	...is scheduled!
+Katherine	k38lu@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is scheduled!
+Cynthia	cc8chan@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is scheduled!
+Joseph	ja2flore@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Leeann	leeann_lu@hotmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is scheduled!
+Mickey	blackspynx1000@yahoo.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm
+
+	...is scheduled!
+Janice	jhc.look@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is scheduled!
+Bryce	bjlynas@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Claire	claire_heggart@hotmail.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Jessica	jessicalfong@hotmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Young-Min	young-min.kim@hotmail.com
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Anton	Anton.Dolgovykh96@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm, 8:30pm - 9:00pm
+
+	...is already scheduled
+Congyu	c84lin@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Girisan	gsivage@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is scheduled!
+Christina	liuchristin4@gmail.com
+	day: Saturday, September 19th
+	avail: 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm
+
+	...is already scheduled
+Joanna	l58lu@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Hardeep	hardeepbegda@hotmail.com
+	day: Saturday, September 19th
+	avail: 11:30am - 12:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Michelle	michellevn@live.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Jimmy	jimcwx@gmail.com
+	day: Saturday, September 19th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Adam	adammclaughlin@rogers.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Angela	angela_butron@hotmail.ca
+	day: Saturday, September 19th
+	avail: 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Rebecca	rebecca_george@live.com
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Esther	enxkua@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm, 8:00pm - 8:30pm
+
+	...is scheduled!
+Nicholas	nwktan@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Vic	imsadicantjoinminors@sad.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 
+
+Marisa	marisa.duncan@gmail.com
+	day: Saturday, September 19th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm
+
+	...is already scheduled
+Abbey	abbeyyoung19@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+
+	...is scheduled!
+Andrew	ajomalley05@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm
+
+	...is already scheduled
+Yujie	yujiexzhang@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Jennifer 	jhy2li@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is scheduled!
+David	david.l.li@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+
+	...is scheduled!
+Emma	fretz.emma@gmail.com
+	day: Saturday, September 19th
+	avail: 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Liza	liza.m.gottlieb@gmail.com
+	day: Saturday, September 19th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Tommy	twcruttw@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Eric	ej2luong@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Mariah	mshein@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+dyson	dasmirle@hotmail.com
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Adrian	adrian.merdzan@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Aaron	aaroncrose@hotmail.com
+	day: Saturday, September 19th
+	avail: 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Yale	y.wang217@gmail.com
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Bryce 	Bryceminke@gmail.com
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+
+	...is already scheduled
+oscar	oscarlu10000@hotmail.com
+	day: Saturday, September 19th
+	avail: 5:30pm - 6:00pm
+	day: Sunday, September 20th
+	avail: 11:30am - 12:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm
+
+	...is already scheduled
+Tharsan	tharsankiruba56@gmail.com
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Dylan	minds.eye.temple@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Vachana	vachana1@gmail.com
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Mitchell	mitchtole@hotmail.com
+	day: Saturday, September 19th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm
+
+	...is already scheduled
+Chelsea	clvander@outlook.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+
+	...is already scheduled
+Annie 	a7cui@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	day: Sunday, September 20th
+	avail: 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Leona	leona.tammy@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+
+	...is scheduled!
+Rishabh	rishabh.nag@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is scheduled!
+Michelle	geegeebaby@live.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:30pm - 5:00pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Vincent	jpli@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Misha	misha.khorramshahi@hotmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is scheduled!
+Stephanie	s_collings12@hotmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+Carol	cj.trudell@icloud.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 10:00am - 10:30am, 10:30am - 11:00am, 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm
+
+	...is already scheduled
+Rachel	evergreenie.123@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+
+	...is already scheduled
+Ben	frenzybenzy@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is scheduled!
+Anthony	a84tran@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	day: Sunday, September 20th
+	avail: 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 5:00pm - 5:30pm, 5:30pm - 6:00pm
+
+	...is already scheduled
+Michael 	yuansky66@gmail.com
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Lisa	lisa335513@gmail.com
+	day: Saturday, September 19th
+	avail: 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm
+	day: Sunday, September 20th
+	avail: 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 
+
+	...is already scheduled
+Suphia	s35du@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Kedi	li.kedi@yahoo.ca
+	day: Saturday, September 19th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	...is scheduled!
+	day: Sunday, September 20th
+	avail: 11:00am - 11:30am, 11:30am - 12:00pm, 12:00pm - 12:30pm, 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm
+	...is already scheduled
+	day: Monday, September 21st
+	avail: 5:30pm - 6:00pm, 6:00pm - 6:30pm, 6:30pm - 7:00pm, 7:00pm - 7:30pm, 7:30pm - 8:00pm
+
+	...is already scheduled
+Lily	JX2YOU@uwaterloo.ca
+	day: Saturday, September 19th
+	avail: 
+	day: Sunday, September 20th
+	avail: 
+	day: Monday, September 21st
+	avail: 7:30pm - 8:00pm
+
+Brian	briandec21@gmail.co
+	day: Saturday, September 19th
+	avail: 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm, 4:30pm - 5:00pm, 5:00pm - 5:30pm, 5:30pm - 6:00pm
+	day: Sunday, September 20th
+	avail: 12:30pm - 1:00pm, 1:00pm - 1:30pm, 1:30pm - 2:00pm, 2:00pm - 2:30pm, 2:30pm - 3:00pm, 3:00pm - 3:30pm, 3:30pm - 4:00pm, 4:00pm - 4:30pm
+	...is scheduled!
+	day: Monday, September 21st
+	avail: 
+	...is already scheduled
+['Valerie\tvaleriecht@gmail.com', 'Jeremy\tjmolko@uwaterloo.ca', 'A-Dawg\tainslie_cool@hotmail.com', 'Sanjay\tshparker@uwaterloo.ca', 'Bowen\theyitsjay33@gmail.com', 'Sean\twatmansean@gmail.com', 'Charina\tcharina.alducente@gmail.com', 'Lilian\tl4do@uwaterloo.ca', 'Jane\tgjanewang@gmail.com', 'Conrad \tconblack15@gmail.com', 'James Lintag\tshparker@uwaterloo.ca', 'Joanna\tjtyuan@uwaterloo.ca', 'Simran\tpurbasim@gmail.com', 'Nicholas\tz27cui@uwaterloo.ca', 'Jeremy\tjerrutledge@gmail.com', 'Yili \tpiter0900@gmail.com', 'Marina\tmarina.dosen@hotmail.ca', 'Kate\tkatedebellis@hotmail.com', 'Vincent\tvjyoung@uwaterloo.ca', 'Riley\trileysqzhang@outlook.com', 'Abbey\tabbey1775@gmail.com', 'Nicholas \tioannidis_nick@hotmail.com', 'Rishi\trishnarale@gmail.com', 'David\tdav.idcox@yahoo.ca', 'Chris\tc9pan@uwaterloo.ca', 'Alex\tdun.den@hotmail.com', 'Benjamin\tbenjaminkeah@yahoo.com', 'Trong\ttrongshen@hotmail.com', 'Doug\tdoug.chau@outlook.com', 'Zi Tong (Ally)\tallyxu55555@hotmail.com', 'Katherine\tk38lu@uwaterloo.ca', 'Cynthia\tcc8chan@uwaterloo.ca', 'Joseph\tja2flore@uwaterloo.ca', 'Leeann\tleeann_lu@hotmail.com', 'Mickey\tblackspynx1000@yahoo.com', 'Janice\tjhc.look@gmail.com', 'Bryce\tbjlynas@uwaterloo.ca', 'Claire\tclaire_heggart@hotmail.com', 'Jessica\tjessicalfong@hotmail.com', 'Young-Min\tyoung-min.kim@hotmail.com', 'Anton\tAnton.Dolgovykh96@gmail.com', 'Congyu\tc84lin@uwaterloo.ca', 'Girisan\tgsivage@uwaterloo.ca', 'Christina\tliuchristin4@gmail.com', 'Joanna\tl58lu@uwaterloo.ca', 'Hardeep\thardeepbegda@hotmail.com', 'Michelle\tmichellevn@live.ca', 'Jimmy\tjimcwx@gmail.com', 'Adam\tadammclaughlin@rogers.com', 'Angela\tangela_butron@hotmail.ca', 'Rebecca\trebecca_george@live.com', 'Esther\tenxkua@uwaterloo.ca', 'Nicholas\tnwktan@uwaterloo.ca', 'Marisa\tmarisa.duncan@gmail.com', 'Abbey\tabbeyyoung19@gmail.com', 'Andrew\tajomalley05@gmail.com', 'Yujie\tyujiexzhang@gmail.com', 'Jennifer \tjhy2li@uwaterloo.ca', 'David\tdavid.l.li@uwaterloo.ca', 'Emma\tfretz.emma@gmail.com', 'Liza\tliza.m.gottlieb@gmail.com', 'Tommy\ttwcruttw@uwaterloo.ca', 'Eric\tej2luong@uwaterloo.ca', 'Mariah\tmshein@uwaterloo.ca', 'dyson\tdasmirle@hotmail.com', 'Adrian\tadrian.merdzan@gmail.com', 'Aaron\taaroncrose@hotmail.com', 'Yale\ty.wang217@gmail.com', 'Bryce \tBryceminke@gmail.com', 'oscar\toscarlu10000@hotmail.com', 'Tharsan\ttharsankiruba56@gmail.com', 'Dylan\tminds.eye.temple@gmail.com', 'Vachana\tvachana1@gmail.com', 'Mitchell\tmitchtole@hotmail.com', 'Chelsea\tclvander@outlook.com', 'Annie \ta7cui@uwaterloo.ca', 'Leona\tleona.tammy@gmail.com', 'Rishabh\trishabh.nag@gmail.com', 'Michelle\tgeegeebaby@live.ca', 'Vincent\tjpli@uwaterloo.ca', 'Misha\tmisha.khorramshahi@hotmail.com', 'Carol\tcj.trudell@icloud.com', 'Rachel\tevergreenie.123@gmail.com', 'Ben\tfrenzybenzy@gmail.com', 'Anthony\ta84tran@uwaterloo.ca', 'Michael \tyuansky66@gmail.com', 'Lisa\tlisa335513@gmail.com', 'Suphia\ts35du@uwaterloo.ca', 'Kedi\tli.kedi@yahoo.ca', 'Brian\tbriandec21@gmail.co']
+Number of people without auditions: 3
+Vic	imsadicantjoinminors@sad.com
+Stephanie	s_collings12@hotmail.com
+Lily	JX2YOU@uwaterloo.ca
+Schedule:
+Monday, September 21st at 04:00PM, None
+Monday, September 21st at 04:07PM, None
+Monday, September 21st at 04:14PM, None
+Monday, September 21st at 04:21PM, None
+Monday, September 21st at 04:30PM, None
+Monday, September 21st at 04:37PM, None
+Monday, September 21st at 04:44PM, None
+Monday, September 21st at 04:51PM, None
+Monday, September 21st at 05:00PM, Mickey	blackspynx1000@yahoo.com
+Monday, September 21st at 05:07PM, Abbey	abbeyyoung19@gmail.com
+Monday, September 21st at 05:14PM, Jennifer 	jhy2li@uwaterloo.ca
+Monday, September 21st at 05:21PM, David	david.l.li@uwaterloo.ca
+Monday, September 21st at 05:30PM, Zi Tong (Ally)	allyxu55555@hotmail.com
+Monday, September 21st at 05:37PM, Leona	leona.tammy@gmail.com
+Monday, September 21st at 05:44PM, Rishabh	rishabh.nag@gmail.com
+Monday, September 21st at 05:51PM, Misha	misha.khorramshahi@hotmail.com
+Monday, September 21st at 06:00PM, Ben	frenzybenzy@gmail.com
+Monday, September 21st at 06:07PM, None
+Monday, September 21st at 06:14PM, None
+Monday, September 21st at 06:21PM, None
+Monday, September 21st at 06:30PM, Charina	charina.alducente@gmail.com
+Monday, September 21st at 06:37PM, Lilian	l4do@uwaterloo.ca
+Monday, September 21st at 06:44PM, Conrad 	conblack15@gmail.com
+Monday, September 21st at 06:51PM, Joanna	jtyuan@uwaterloo.ca
+Monday, September 21st at 07:00PM, Simran	purbasim@gmail.com
+Monday, September 21st at 07:07PM, Kate	katedebellis@hotmail.com
+Monday, September 21st at 07:14PM, Vincent	vjyoung@uwaterloo.ca
+Monday, September 21st at 07:21PM, Cynthia	cc8chan@uwaterloo.ca
+Monday, September 21st at 07:30PM, Leeann	leeann_lu@hotmail.com
+Monday, September 21st at 07:37PM, Janice	jhc.look@gmail.com
+Monday, September 21st at 07:44PM, Girisan	gsivage@uwaterloo.ca
+Monday, September 21st at 07:51PM, Esther	enxkua@uwaterloo.ca
+Monday, September 21st at 08:00PM, Katherine	k38lu@uwaterloo.ca
+Monday, September 21st at 08:07PM, None
+Monday, September 21st at 08:14PM, None
+Monday, September 21st at 08:21PM, None
+Monday, September 21st at 08:30PM, None
+Monday, September 21st at 08:37PM, None
+Monday, September 21st at 08:44PM, None
+Monday, September 21st at 08:51PM, None
+Saturday, September 19th at 01:00PM, None
+Saturday, September 19th at 01:07PM, None
+Saturday, September 19th at 01:14PM, None
+Saturday, September 19th at 01:21PM, None
+Saturday, September 19th at 01:30PM, Michelle	michellevn@live.ca
+Saturday, September 19th at 01:37PM, Adam	adammclaughlin@rogers.com
+Saturday, September 19th at 01:44PM, Rebecca	rebecca_george@live.com
+Saturday, September 19th at 01:51PM, Marisa	marisa.duncan@gmail.com
+Saturday, September 19th at 02:00PM, Bryce 	Bryceminke@gmail.com
+Saturday, September 19th at 02:07PM, Tharsan	tharsankiruba56@gmail.com
+Saturday, September 19th at 02:14PM, Vachana	vachana1@gmail.com
+Saturday, September 19th at 02:21PM, Mitchell	mitchtole@hotmail.com
+Saturday, September 19th at 02:30PM, Valerie	valeriecht@gmail.com
+Saturday, September 19th at 02:37PM, Jeremy	jmolko@uwaterloo.ca
+Saturday, September 19th at 02:44PM, A-Dawg	ainslie_cool@hotmail.com
+Saturday, September 19th at 02:51PM, Sanjay	shparker@uwaterloo.ca
+Saturday, September 19th at 03:00PM, Bowen	heyitsjay33@gmail.com
+Saturday, September 19th at 03:07PM, Jane	gjanewang@gmail.com
+Saturday, September 19th at 03:14PM, James Lintag	shparker@uwaterloo.ca
+Saturday, September 19th at 03:21PM, Marina	marina.dosen@hotmail.ca
+Saturday, September 19th at 03:30PM, Yili 	piter0900@gmail.com
+Saturday, September 19th at 03:37PM, Abbey	abbey1775@gmail.com
+Saturday, September 19th at 03:44PM, Rishi	rishnarale@gmail.com
+Saturday, September 19th at 03:51PM, David	dav.idcox@yahoo.ca
+Saturday, September 19th at 04:00PM, Chris	c9pan@uwaterloo.ca
+Saturday, September 19th at 04:07PM, Alex	dun.den@hotmail.com
+Saturday, September 19th at 04:14PM, Benjamin	benjaminkeah@yahoo.com
+Saturday, September 19th at 04:21PM, Trong	trongshen@hotmail.com
+Saturday, September 19th at 04:30PM, Joseph	ja2flore@uwaterloo.ca
+Saturday, September 19th at 04:37PM, Bryce	bjlynas@uwaterloo.ca
+Saturday, September 19th at 04:44PM, Young-Min	young-min.kim@hotmail.com
+Saturday, September 19th at 04:51PM, Congyu	c84lin@uwaterloo.ca
+Saturday, September 19th at 05:00PM, Claire	claire_heggart@hotmail.com
+Saturday, September 19th at 05:07PM, Christina	liuchristin4@gmail.com
+Saturday, September 19th at 05:14PM, Jimmy	jimcwx@gmail.com
+Saturday, September 19th at 05:21PM, Angela	angela_butron@hotmail.ca
+Saturday, September 19th at 05:30PM, Nicholas	nwktan@uwaterloo.ca
+Saturday, September 19th at 05:37PM, Emma	fretz.emma@gmail.com
+Saturday, September 19th at 05:44PM, dyson	dasmirle@hotmail.com
+Saturday, September 19th at 05:51PM, Aaron	aaroncrose@hotmail.com
+Saturday, September 19th at 10:00AM, None
+Saturday, September 19th at 10:07AM, None
+Saturday, September 19th at 10:14AM, None
+Saturday, September 19th at 10:21AM, None
+Saturday, September 19th at 10:30AM, None
+Saturday, September 19th at 10:37AM, None
+Saturday, September 19th at 10:44AM, None
+Saturday, September 19th at 10:51AM, None
+Saturday, September 19th at 11:00AM, Jeremy	jerrutledge@gmail.com
+Saturday, September 19th at 11:07AM, Doug	doug.chau@outlook.com
+Saturday, September 19th at 11:14AM, Tommy	twcruttw@uwaterloo.ca
+Saturday, September 19th at 11:21AM, Eric	ej2luong@uwaterloo.ca
+Saturday, September 19th at 11:30AM, Hardeep	hardeepbegda@hotmail.com
+Saturday, September 19th at 11:37AM, Yale	y.wang217@gmail.com
+Saturday, September 19th at 11:44AM, Kedi	li.kedi@yahoo.ca
+Saturday, September 19th at 11:51AM, None
+Saturday, September 19th at 12:00PM, Liza	liza.m.gottlieb@gmail.com
+Saturday, September 19th at 12:07PM, None
+Saturday, September 19th at 12:14PM, None
+Saturday, September 19th at 12:21PM, None
+Saturday, September 19th at 12:30PM, Vincent	jpli@uwaterloo.ca
+Saturday, September 19th at 12:37PM, None
+Saturday, September 19th at 12:44PM, None
+Saturday, September 19th at 12:51PM, None
+Sunday, September 20th at 01:00PM, None
+Sunday, September 20th at 01:07PM, None
+Sunday, September 20th at 01:14PM, None
+Sunday, September 20th at 01:21PM, None
+Sunday, September 20th at 01:30PM, None
+Sunday, September 20th at 01:37PM, None
+Sunday, September 20th at 01:44PM, None
+Sunday, September 20th at 01:51PM, None
+Sunday, September 20th at 02:00PM, None
+Sunday, September 20th at 02:07PM, None
+Sunday, September 20th at 02:14PM, None
+Sunday, September 20th at 02:21PM, None
+Sunday, September 20th at 02:30PM, Nicholas	z27cui@uwaterloo.ca
+Sunday, September 20th at 02:37PM, Nicholas 	ioannidis_nick@hotmail.com
+Sunday, September 20th at 02:44PM, Andrew	ajomalley05@gmail.com
+Sunday, September 20th at 02:51PM, Mariah	mshein@uwaterloo.ca
+Sunday, September 20th at 03:00PM, Yujie	yujiexzhang@gmail.com
+Sunday, September 20th at 03:07PM, Dylan	minds.eye.temple@gmail.com
+Sunday, September 20th at 03:14PM, Chelsea	clvander@outlook.com
+Sunday, September 20th at 03:21PM, Annie 	a7cui@uwaterloo.ca
+Sunday, September 20th at 03:30PM, Rachel	evergreenie.123@gmail.com
+Sunday, September 20th at 03:37PM, Anthony	a84tran@uwaterloo.ca
+Sunday, September 20th at 03:44PM, Michael 	yuansky66@gmail.com
+Sunday, September 20th at 03:51PM, Lisa	lisa335513@gmail.com
+Sunday, September 20th at 04:00PM, Suphia	s35du@uwaterloo.ca
+Sunday, September 20th at 04:07PM, Brian	briandec21@gmail.co
+Sunday, September 20th at 04:14PM, None
+Sunday, September 20th at 04:21PM, None
+Sunday, September 20th at 04:30PM, Sean	watmansean@gmail.com
+Sunday, September 20th at 04:37PM, Anton	Anton.Dolgovykh96@gmail.com
+Sunday, September 20th at 04:44PM, Joanna	l58lu@uwaterloo.ca
+Sunday, September 20th at 04:51PM, None
+Sunday, September 20th at 05:00PM, Jessica	jessicalfong@hotmail.com
+Sunday, September 20th at 05:07PM, Michelle	geegeebaby@live.ca
+Sunday, September 20th at 05:14PM, None
+Sunday, September 20th at 05:21PM, None
+Sunday, September 20th at 05:30PM, Riley	rileysqzhang@outlook.com
+Sunday, September 20th at 05:37PM, None
+Sunday, September 20th at 05:44PM, None
+Sunday, September 20th at 05:51PM, None
+Sunday, September 20th at 06:00PM, None
+Sunday, September 20th at 06:07PM, None
+Sunday, September 20th at 06:14PM, None
+Sunday, September 20th at 06:21PM, None
+Sunday, September 20th at 06:30PM, None
+Sunday, September 20th at 06:37PM, None
+Sunday, September 20th at 06:44PM, None
+Sunday, September 20th at 06:51PM, None
+Sunday, September 20th at 10:00AM, None
+Sunday, September 20th at 10:07AM, None
+Sunday, September 20th at 10:14AM, None
+Sunday, September 20th at 10:21AM, None
+Sunday, September 20th at 10:30AM, None
+Sunday, September 20th at 10:37AM, None
+Sunday, September 20th at 10:44AM, None
+Sunday, September 20th at 10:51AM, None
+Sunday, September 20th at 11:00AM, Adrian	adrian.merdzan@gmail.com
+Sunday, September 20th at 11:07AM, Carol	cj.trudell@icloud.com
+Sunday, September 20th at 11:14AM, None
+Sunday, September 20th at 11:21AM, None
+Sunday, September 20th at 11:30AM, oscar	oscarlu10000@hotmail.com
+Sunday, September 20th at 11:37AM, None
+Sunday, September 20th at 11:44AM, None
+Sunday, September 20th at 11:51AM, None
+Sunday, September 20th at 12:00PM, None
+Sunday, September 20th at 12:07PM, None
+Sunday, September 20th at 12:14PM, None
+Sunday, September 20th at 12:21PM, None
+Sunday, September 20th at 12:30PM, None
+Sunday, September 20th at 12:37PM, None
+Sunday, September 20th at 12:44PM, None
+Sunday, September 20th at 12:51PM, None
+Time, Person
